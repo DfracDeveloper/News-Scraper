@@ -301,14 +301,14 @@ if submit_button:
                     # Adding the dataframe in dict
                     dataframes['Global Times'] = gt_df
                     st.write("___________________________")
-                    # Download button to download data in CSV format
-                    csv = gt_df.to_csv(index=False).encode()
-                    st.download_button(
-                        label="Download Global Times data as CSV",
-                        data=csv,
-                        file_name='global_times_data.csv',
-                        mime='text/csv',
-                    )
+                    # # Download button to download data in CSV format
+                    # csv = gt_df.to_csv(index=False).encode()
+                    # st.download_button(
+                    #     label="Download Global Times data as CSV",
+                    #     data=csv,
+                    #     file_name='global_times_data.csv',
+                    #     mime='text/csv',
+                    # )
                 elif site == 'Wall Street Journey':
                     st.title('Wall Street Journal Data')
                     with st.spinner('Fetching Wall Street Journey Data...'):
